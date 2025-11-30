@@ -3523,10 +3523,9 @@ input, select, textarea {
 									padding: 0 1.5em;
 								}
 
-									#header nav > ul > li > a.menuToggle span {
-										display: none;
-									}
-
+								#header nav > ul > li > a.menuToggle span {
+									display: none;
+								}
 							}
 
 						@media screen and (max-width: 736px) {

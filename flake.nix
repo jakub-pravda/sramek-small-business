@@ -23,7 +23,6 @@
               pulumi
               pulumiPackages.pulumi-language-go
               python3
-              html-tidy
           ];
         };
       });
