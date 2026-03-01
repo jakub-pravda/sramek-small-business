@@ -7,6 +7,7 @@ function error_with_message {
     exit 1
 }
 
+
 function run_html_tidy {
     echo "Running HTML Tidy on $1"
     find ./www/$1/ -name "*.html" | while read -r f; do
@@ -15,30 +16,31 @@ function run_html_tidy {
     done
 }
 
-CODE_ROOT_DIR="$(pwd)/.."
+REPO_ROOT="$(git rev-parse --show-toplevel)"
 
 echo "Running pre-commit checks"
 
-## Check golang source code
-echo "Checking golang source code"
-cd $CODE_ROOT_DIR || error_with_message "Failed to change directory to $CODE_ROOT_DIR"
-
+# Check if all necessary commands are available 
 if ! command -v go &> /dev/null
 then
     error_with_message "go could not be found, please install go"
 fi
 
-cd ./infra/src || error_with_message "Failed to change directory to infra/src"
-go fmt
-go build -o /dev/null
-
-## Check html
-echo "Checking HTML files"
-cd $CODE_ROOT_DIR || error_with_message "Failed to change directory to $CODE_ROOT_DIR"
-
 if ! command -v tidy &> /dev/null
 then
     error_with_message "tidy could not be found, please install tidy"
 fi
+
+## Check golang source code
+echo "Checking golang source code"
+cd $REPO_ROOT || error_with_message "Failed to change directory to $REPO_ROOT"
+
+cd $REPO_ROOT/infra/src || error_with_message "Failed to change directory to infra/src"
+go fmt ./...
+go build -o /dev/null
+
+## Check html
+echo "Checking HTML files"
+cd $REPO_ROOT || error_with_message "Failed to change directory to $REPO_ROOT"
 
 run_html_tidy "sramek-garden-center"

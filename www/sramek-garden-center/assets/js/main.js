@@ -3,8 +3,8 @@ window.$ = window.jQuery = $;
 
 import "jquery.scrollex";
 import "./jquery.scrolly.min.js";
-import GLightbox from 'glightbox';
-import 'glightbox/dist/css/glightbox.css';
+import GLightbox from "glightbox";
+import "glightbox/dist/css/glightbox.css";
 
 /**
  * Header elements
@@ -31,10 +31,13 @@ class Header extends HTMLElement {
 					<a href="sortiment.html">Sortiment</a>
 					</li>
 					<li>
-					<a href="svatby.html">Svatební kytice</a>
+					<a href="navrhy.html">Návrhy a realizace</a>
 					</li>
 					<li>
 					<a href="udrzby.html">Údržby zahrad</a>
+					</li>
+					<li>
+					<a href="svatby.html">Svatební kytice</a>
 					</li>
 					<li>
 					<a href="index.html#three">Kontakt</a>

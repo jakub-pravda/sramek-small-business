@@ -1,18 +1,20 @@
 #!/usr/bin/env bash
 echo "=== Running deployment script ==="
-CODE_ROOT_DIR="$(pwd)/.."
 
-cd $CODE_ROOT_DIR
+# Switch to repo root
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+cd "$REPO_ROOT"
 echo "Building garden center website"
 cd www/sramek-garden-center
 npm run buildstatic
 
-cd $CODE_ROOT_DIR
+cd "$REPO_ROOT"
 echo "Building transportation website"
 cd www/sramek-transportation
 npm run buildstatic
 
-cd $CODE_ROOT_DIR
+cd "$REPO_ROOT"
 echo "Running pulumi up"
 cd infra
 pulumi up
