@@ -248,3 +248,31 @@ func setBucketCors(ctx *pulumi.Context, bucket *s3.Bucket, cors string, projectN
 		handleErr(err)
 	}
 }
+
+func defaultCacheBehavior(pattern string, expirationDays int, contentBucket *s3.Bucket) *cloudfront.DistributionOrderedCacheBehaviorArgs {
+	cache := &cloudfront.DistributionOrderedCacheBehaviorArgs{
+		PathPattern:          pulumi.String(pattern),
+		TargetOriginId:       contentBucket.Arn,
+		ViewerProtocolPolicy: pulumi.String("redirect-to-https"),
+		AllowedMethods: pulumi.StringArray{
+			pulumi.String("GET"),
+			pulumi.String("HEAD"),
+		},
+		CachedMethods: pulumi.StringArray{
+			pulumi.String("GET"),
+			pulumi.String("HEAD"),
+		},
+		ForwardedValues: &cloudfront.DistributionOrderedCacheBehaviorForwardedValuesArgs{
+			QueryString: pulumi.Bool(false),
+			Cookies: &cloudfront.DistributionOrderedCacheBehaviorForwardedValuesCookiesArgs{
+				Forward: pulumi.String("none"),
+			},
+		},
+		MinTtl:     pulumi.Int(60 * 60 * 24 * expirationDays),
+		DefaultTtl: pulumi.Int(60 * 60 * 24 * expirationDays),
+		MaxTtl:     pulumi.Int(60 * 60 * 24 * expirationDays),
+		Compress:   pulumi.Bool(true),
+	}
+
+	return cache
+}

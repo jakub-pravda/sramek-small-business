@@ -162,29 +162,9 @@ func instantiateCloudfront(
 			Compress:   pulumi.Bool(true),
 		},
 		OrderedCacheBehaviors: cloudfront.DistributionOrderedCacheBehaviorArray{
-			&cloudfront.DistributionOrderedCacheBehaviorArgs{
-				PathPattern:          pulumi.String("/images/*"),
-				TargetOriginId:       contentBucket.Arn,
-				ViewerProtocolPolicy: pulumi.String("redirect-to-https"),
-				AllowedMethods: pulumi.StringArray{
-					pulumi.String("GET"),
-					pulumi.String("HEAD"),
-				},
-				CachedMethods: pulumi.StringArray{
-					pulumi.String("GET"),
-					pulumi.String("HEAD"),
-				},
-				ForwardedValues: &cloudfront.DistributionOrderedCacheBehaviorForwardedValuesArgs{
-					QueryString: pulumi.Bool(false),
-					Cookies: &cloudfront.DistributionOrderedCacheBehaviorForwardedValuesCookiesArgs{
-						Forward: pulumi.String("none"),
-					},
-				},
-				MinTtl:     pulumi.Int(60 * 60 * 24 * 30), // 30 days
-				DefaultTtl: pulumi.Int(60 * 60 * 24 * 30), // 30 days
-				MaxTtl:     pulumi.Int(60 * 60 * 24 * 30), // 30 days
-				Compress:   pulumi.Bool(true),
-			},
+			defaultCacheBehavior("*.webp", 30, contentBucket),
+			defaultCacheBehavior("*.js", 7, contentBucket),
+			defaultCacheBehavior("*.css", 7, contentBucket),
 		},
 		Origins: cloudfront.DistributionOriginArray{
 			cloudfront.DistributionOriginArgs{
