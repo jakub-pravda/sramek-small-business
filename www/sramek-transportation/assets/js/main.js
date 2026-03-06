@@ -220,7 +220,7 @@ class Footer extends HTMLElement {
 
         <div class="container mt-4">
           <div class="copyright">
-            &copy; 2025 <strong><span>Šrámek autodoprava</span></strong>
+            &copy; 2026 <strong><span>Šrámek autodoprava</span></strong>
           </div>
           <div class="credits">
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
