@@ -70,7 +70,7 @@
         },
         "pebble-fraction-4-8-kaznejov": {
             "name": "Kačírek Kaznějov šedobílý 4/8 (drcený)",
-            "price": "10000,-Kč/t"
+            "price": "1550,-Kč/t"
         },
         "pebble-fraction-4-8-kaznejov-2": {
             "name": "Kačírek Kaznějov šedobílý 4/8",
@@ -85,7 +85,7 @@
             "price": "1250,-Kč/t"
         },
         "ornamental-boulder-100-250": {
-            "name": "Labské valouny 100/120",
+            "name": "Labské valouny 100/250",
             "price": "8000,-Kč/t"
         },
         "ornamental-boulder-100-1000": {
@@ -126,7 +126,7 @@
         },
         "other-compost": {
             "name": "Kompost (volně ložený)",
-            "price": "1500,-Kč/m"
+            "price": "1500,-Kč/m³"
         },
         "other-bark-mulch-packed": {
             "name": "Mulčovací kůra balená (profi) 70 litrů paletový prodej",
@@ -196,14 +196,14 @@
         },
         "container-3m3-wood": {
             "name": "3,5m³ (dřevo čisté bez příměsi)",
-            "price": "2800,-Kč"
+            "price": "3700,-Kč"
         },
         "container-3m3": {
             "name": "3,5m³ (odpad vyjma nebezpečných)",
             "price": "5700,-Kč"
         },
-        "container-řm3": {
-            "name": "3,5m³ (suť)",
+        "container-5m3": {
+            "name": "5m³ (suť)",
             "price": "5500,-Kč"
         },
         "container-6m3": {
@@ -267,7 +267,7 @@
             "price": "1000,-Kč/hod (hydr. kladivo + 200,-Kč/hod)"
         },
         "excavator-atlas": {
-            "name": "Kolový bagr Atlas 10 t",
+            "name": "Kolový bagr Atlas 9t",
             "price": "1400,-Kč/hod"
         },
         "loader-wecker": {
@@ -291,7 +291,7 @@
             "price": "2500,-Kč/hod"
         },
         "concrete-cutting": {
-            "name": "Řezání betonu a živice do 17 cm",
+            "name": "Řezání betonu a živice do 15 cm",
             "price": "200,-Kč/m + přistavení stroje"
         },
         "tractor-zetor-proxima": {
