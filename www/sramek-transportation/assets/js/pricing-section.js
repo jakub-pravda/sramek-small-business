@@ -1,40 +1,38 @@
-function populateTable(pricingSection) {
-  // Fetch the JSON data
+function populateTable(sectionId) {
   fetch("/pricing.json")
     .then((response) => response.json())
     .then((data) => {
-      // Get the table body
-      const tbody = document.querySelector(`.table.${pricingSection} tbody`);
+      const tbody = document.querySelector(`.table.${sectionId} tbody`);
+      const groups = data[sectionId];
 
-      // Clear the table body
       tbody.innerHTML = "";
 
-      // Get the data for the specified pricing section
-      const sectionData = data[pricingSection];
+      groups.forEach((group) => {
+        if (group.subheader) {
+          const row = document.createElement("tr");
+          const cell = document.createElement("td");
+          cell.colSpan = 2;
+          cell.textContent = group.subheader;
+          cell.className = "pricing-subheader";
+          row.appendChild(cell);
+          tbody.appendChild(row);
+        }
 
-      // Iterate over the section data
-      for (const key in sectionData) {
-        const item = sectionData[key];
+        group.items.forEach((item) => {
+          const row = document.createElement("tr");
+          const nameCell = document.createElement("td");
+          const priceCell = document.createElement("td");
 
-        // Create a new row and cells
-        const row = document.createElement("tr");
-        const nameCell = document.createElement("td");
-        const priceCell = document.createElement("td");
+          nameCell.textContent = item.name;
+          priceCell.textContent = item.price;
 
-        // Set the cell text
-        nameCell.textContent = item.name;
-        priceCell.textContent = item.price;
+          nameCell.style.fontWeight = "500";
+          priceCell.style.textAlign = "right";
 
-        // CSS styling of table cells
-        nameCell.style.fontWeight = "500";
-        priceCell.style.textAlign = "right";
-
-        // Add the cells to the row
-        row.appendChild(nameCell);
-        row.appendChild(priceCell);
-
-        // Add the row to the table
-        tbody.appendChild(row);
-      }
+          row.appendChild(nameCell);
+          row.appendChild(priceCell);
+          tbody.appendChild(row);
+        });
+      });
     });
 }

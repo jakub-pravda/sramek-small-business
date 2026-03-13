@@ -68,39 +68,43 @@
     <section class="pricing">
       <div class="container">
 
-        <p class="bold">Uvedené ceny jsou bez 21 %DPH</p>
+        <p class="bold">Uvedené ceny jsou bez 21 % DPH</p>
         <p>V případě dotazů nás neváhejte <a href="kontakt.html">kontaktovat</a>.</p>
         <p>
-            <a href="#pricing-containers">Ceník kontejnery</a><br>
-            <a href="#pricing-landfill">Ceník deponie</a><br>
-            <a href="#pricing-machines">Ceník stroje</a><br>
-            <a href="#pricing-garden-maintenance">Ceník údržba zahrad</a><br>
+          <a href="#pricing-containers">Ceník přistavení kontejnerů</a><br>
+          <a href="#pricing-transport">Doprava materiálů</a><br>
+          <a href="#pricing-materials">Ceník materiálu</a><br>
+          <a href="#pricing-machines">Stavební stroje</a><br>
+          <a href="#pricing-garden-maintenance">Údržba zahrad</a><br>
         </p>
 
         <!-- Containers section -->
         <div id="pricing-containers" class="section-header">
           <span>Kontejnery</span>
-          <h2>Kontejnery</h2>
+          <h2>Ceník přistavení kontejnerů</h2>
         </div>
-        
-        <p>Pronájem kontejnerů 1-3dny 0Kč další dny 50Kč/den</p>
-        <p class="important">Příměs suti v odpadových kontejnerech za příplatek 1000Kč</p>
 
         <table class="table containers">
           <tbody></tbody>
         </table>
 
-        <table class="table containers-transport">
+        <!-- Transport section -->
+        <div id="pricing-transport" class="section-header">
+          <span>Doprava</span>
+          <h2>Doprava materiálů</h2>
+        </div>
+
+        <table class="table transport">
           <tbody></tbody>
         </table>
 
-        <!-- Landfill section -->
-        <div id="pricing-landfill" class="section-header">
-          <span>Deponie</span>
-          <h2>Deponie</h2>
+        <!-- Materials section -->
+        <div id="pricing-materials" class="section-header">
+          <span>Materiál</span>
+          <h2>Ceník materiálu</h2>
         </div>
-      
-        <table class="table landfill">
+
+        <table class="table materials">
           <tbody></tbody>
         </table>
 
@@ -109,7 +113,7 @@
           <span>Stavební stroje</span>
           <h2>Stavební stroje</h2>
         </div>
-      
+
         <table class="table machines">
           <tbody></tbody>
         </table>
@@ -119,13 +123,12 @@
           <span>Údržba zahrad</span>
           <h2>Údržba zahrad</h2>
         </div>
-      
+
         <table class="table garden-maintenance">
           <tbody></tbody>
         </table>
-      </div>
 
-      
+      </div>
     </section>
 
   </main><!-- End #main -->
@@ -141,9 +144,9 @@
   <!-- Call the populateTable function for each section -->
   <script>
     window.onload = function() {
-      populateTable('containers-transport');
       populateTable('containers');
-      populateTable('landfill');
+      populateTable('transport');
+      populateTable('materials');
       populateTable('machines');
       populateTable('garden-maintenance');
     }

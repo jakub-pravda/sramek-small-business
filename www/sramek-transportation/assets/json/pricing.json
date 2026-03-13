@@ -1,376 +1,193 @@
 {
-    "landfill": {
-        "stone-fraction-0-4": {
-            "name": "Lomový kámen 0/4 šedozelený",
-            "price": "470,-Kč/t"
+    "containers": [
+        {
+            "subheader": "Kontejner – 3,5 m³",
+            "items": [
+                { "name": "suť", "price": "3 700,- Kč" },
+                { "name": "zemina", "price": "3 700,- Kč" },
+                { "name": "bioodpad", "price": "2 800,- Kč" },
+                { "name": "dřevo (čisté, bez příměsi)", "price": "3 700,- Kč" },
+                { "name": "odpad", "price": "5 700,- Kč" }
+            ]
         },
-        "stone-fraction-0-4-thresh-red": {
-            "name": "Lomový kámen 0/4 červeno-hnědý (mlat)",
-            "price": "1250,-Kč/t"
+        {
+            "subheader": "Kontejner 5 m³",
+            "items": [
+                { "name": "suť", "price": "5 500,- Kč" }
+            ]
         },
-        "stone-fraction-0-4-thresh-ocher": {
-            "name": "Lomový kámen 0/4 okrový (mlat)",
-            "price": "1250,-Kč/t"
+        {
+            "subheader": "Kontejner – 6 m³",
+            "items": [
+                { "name": "suť", "price": "6 850,- Kč" },
+                { "name": "zemina", "price": "6 000,- Kč" },
+                { "name": "bioodpad", "price": "3 700,- Kč" },
+                { "name": "dřevo (čisté, bez příměsi)", "price": "5 000,- Kč" },
+                { "name": "odpad", "price": "6 900,- Kč" }
+            ]
         },
-        "stone-fraction-0-4-thresh-grey": {
-            "name": "Lomový kámen 0/4 šedo-olivový (mlat)",
-            "price": "1200,-Kč/t"
+        {
+            "subheader": "Kontejner 10 m³",
+            "items": [
+                { "name": "odpad", "price": "8 500,- Kč" },
+                { "name": "bioodpad", "price": "4 500,- Kč" }
+            ]
         },
-        "stone-fraction-0-8": {
-            "name": "Lomový kámen 0/8",
-            "price": "450,-Kč/t"
-        },
-        "stone-fraction-0-32": {
-            "name": "Lomový kámen 0/32",
-            "price": "580,-Kč/t"
-        },
-        "stone-fraction-0-63": {
-            "name": "Lomový kámen 0/63",
-            "price": "580,-Kč/t"
-        },
-        "stone-fraction-4-8": {
-            "name": "Lomový kámen 4/8",
-            "price": "890,-Kč/t"
-        },
-        "stone-fraction-8-16": {
-            "name": "Lomový kámen 8/16",
-            "price": "650,-Kč/t"
-        },
-        "stone-fraction-16-32": {
-            "name": "Lomový kámen 16/32",
-            "price": "650,-Kč/t"
-        },
-        "stone-fraction-32-63": {
-            "name": "Lomový kámen 32/63",
-            "price": "650,-Kč/t"
-        },
-        "stone-fraction-63-150": {
-            "name": "Lomový kámen do gabionů 63/180",
-            "price": "900,-Kč/t"
-        },
-        "stone-fraction-500-1500": {
-            "name": "Lomový kámen 500/1500",
-            "price": "900,-Kč/t"
-        },
-        "pebble-fraction-4-8": {
-            "name": "Kačírek Labský praný říční 4/8",
-            "price": "750,-Kč/t"
-        },     
-        "pebble-fraction-10-32": {
-            "name": "Kačírek Labský praný říční 8/16 ",
-            "price": "450,-Kč/t"
-        },   
-        "pebble-fraction-16-32": {
-            "name": "Kačírek Labský praný říční 16/32",
-            "price": "450,-Kč/t"
-        },
-        "pebble-fraction-32-63": {
-            "name": "Kačírek Labský praný říční 32/63",
-            "price": "450,-Kč/t"
-        },
-        "pebble-fraction-4-8-kaznejov": {
-            "name": "Kačírek Kaznějov šedobílý 4/8 (drcený)",
-            "price": "1550,-Kč/t"
-        },
-        "pebble-fraction-4-8-kaznejov-2": {
-            "name": "Kačírek Kaznějov šedobílý 4/8",
-            "price": "1250,-Kč/t"
-        },
-        "pebble-fraction-16-22-kaznejov": {
-            "name": "Kačírek Kaznějov šedobílý 16/22",
-            "price": "1250,-Kč/t"
-        },
-        "pebble-fraction-50-120-kaznejov": {
-            "name": "Kačírek Kaznějov šedobílý 50/120",
-            "price": "1250,-Kč/t"
-        },
-        "ornamental-boulder-100-250": {
-            "name": "Labské valouny 100/250",
-            "price": "8000,-Kč/t"
-        },
-        "ornamental-boulder-100-1000": {
-            "name": "Labské valouny 100/1000",
-            "price": "10000,-Kč/t"
-        },
-        "ornamental-boulder-50-500": {
-            "name": "Bílé valouny 50/500",
-            "price": "18000,-Kč/t"
-        },
-        "granite-100-250": {
-            "name": "Žulový kámen 220/1000",
-            "price": "1500,-Kč/t"
-        },
-        "sand-fraction-0-4": {
-            "name": "Betonářský tříděný písek 0/4",
-            "price": "450,-Kč/t"
-        },
-        "sand-fraction-0-2": {
-            "name": "Maltový tříděný písek 0/2",
-            "price": "550,-Kč/t"
-        },
-        "sand-fraction-1-2": {
-            "name": "Křemičitý bílý písek na zásyp 1/2",
-            "price": "1000,-Kč/t"
-        },
-        "sand-fraction-x-x": {
-            "name": "Zásypový písek",
-            "price": "250,-Kč/t"
-        },
-        "other-gardening-substrate": {
-            "name": "Zahradnický substrát",
-            "price": "1500,-Kč/m³"
-        },
-        "other-bark-mulch": {
-            "name": "Mulčovací kůra volně ložená",
-            "price": "1250,-Kč/m³"
-        },
-        "other-compost": {
-            "name": "Kompost (volně ložený)",
-            "price": "1500,-Kč/m³"
-        },
-        "other-bark-mulch-packed": {
-            "name": "Mulčovací kůra balená (profi) 70 litrů paletový prodej",
-            "price": "110,-Kč/kus"
-        },
-        "other-garden-soil": {
-            "name": "Tříděná zemina na zásypy a dorovnání",
-            "price": "200,-Kč/t"
-        },
-        "other-graded-soil": {
-            "name": "Tříděná zemina vhodná na trávník a záhony",
-            "price": "400,-Kč/t"
-        },
-        "other-sandstone": {
-            "name": "Pískovec 150/2000",
-            "price": "3000,-Kč/t"
-        },
-        "other-concrete": {
-            "name": "Betonový recyklát 0/70",
-            "price": "250,-Kč/t"
-        },
-        "waste-concrete": {
-            "name": "Beton 170101 do 50cm, nad 50cm přirážka 50%",
-            "price": "580,-Kč/t"
-        },
-        "waste-debris": {
-            "name": "Stavební suť cihelná čistá 170102",
-            "price": "650,-Kč/t"
-        },
-        "waste-earth": {
-            "name": "Výkopová zemina 170504",
-            "price": "450,-Kč/t"
-        },
-        "waste-plasterboard": {
-            "name": "Sádrokarton ",
-            "price": "1800,-Kč/t"
-        },
-        "waste-wood": {
-            "name": "Dřevo odpadní",
-            "price": "1800,-Kč/t"
-        },
-        "waste-mixture": {
-            "name": "Směs stavebních materiálů 170904",
-            "price": "4500,-Kč/t"
-        },
-        "waste-concrete-info": {
-            "name": "Dodáváme a dopravujeme zavlhlé betonové směsi",
-            "price": "cena na poptání"
-        },
-        "garden-stuff": {
-            "name": "Žulové prvky - Obrubník, patník, schody",
-            "price": "cena na poptání"
+        {
+            "subheader": "Kontejner 20 m³",
+            "items": [
+                { "name": "bioodpad", "price": "8 800,- Kč" }
+            ]
         }
-    },
-    "containers": {
-        "container-3m3-landfill": {
-            "name": "3,5m³ (suť)",
-            "price": "3700,-Kč"
-        },
-        "container-3m3-landfill-earth": {
-            "name": "3,5m³ (zemina)",
-            "price": "3700,-Kč"
-        },
-        "container-3m3-landfill-bio": {
-            "name": "3,5m³ (BIO odpad)",
-            "price": "2800,-Kč"
-        },
-        "container-3m3-wood": {
-            "name": "3,5m³ (dřevo čisté bez příměsi)",
-            "price": "3700,-Kč"
-        },
-        "container-3m3": {
-            "name": "3,5m³ (odpad vyjma nebezpečných)",
-            "price": "5700,-Kč"
-        },
-        "container-5m3": {
-            "name": "5m³ (suť)",
-            "price": "5500,-Kč"
-        },
-        "container-6m3": {
-            "name": "6m³ (odpad vyjma nebezpečných)",
-            "price": "6900,-Kč"
-        },
-        "container-6m3-bio": {
-            "name": "6m³ (BIO odpad)",
-            "price": "3700,-Kč"
-        },
-        "container-6m3-10t": {
-            "name": "6m³ (suť)",
-            "price": "6850,-Kč"
-        },
-        "container-6m3-10t-earth": {
-            "name": "6m³ (zemina)",
-            "price": "6000,-Kč"
-        },
-        "container-6m3-10t-wood": {
-            "name": "6m³ (dřevo čisté bez příměsi)",
-            "price": "5000,-Kč"
-        },
-        "container-10m3": {
-            "name": "10m³ (odpad vyjma nebezpečných)",
-            "price": "8500,-Kč"
-        },
-        "container-10m3-bio": {
-            "name": "10m³ (BIO odpad)",
-            "price": "4500,-Kč"
-        },
-        "container-20m3-bio": {
-            "name": "20m³ (BIO odpad)",
-            "price": "8800,-Kč"
+    ],
+    "transport": [
+        {
+            "items": [
+                { "name": "Sklápěč nosnost 2,5t", "price": "30 Kč/km, 650 Kč/hod" },
+                { "name": "Nosič kontejnerů nosnost 6,5t", "price": "45 Kč/km, 700 Kč/hod" },
+                { "name": "Nosič kontejnerů nosnost 10t", "price": "55 Kč/km, 850 Kč/hod" }
+            ]
         }
-    },
-    "containers-transport": {
-        "dump-truck": {
-            "name": "Sklápěč nosnost 2,5t",
-            "price": "30,-Kč/km, 650,-Kč/hod"
+    ],
+    "materials": [
+        {
+            "subheader": "Lomový kámen (štěrk)",
+            "items": [
+                { "name": "Frakce 0/4 – šedozelený (prach, mlat)", "price": "470 Kč/t" },
+                { "name": "Frakce 0/4 – červenohnědý (mlat)", "price": "1 250 Kč/t" },
+                { "name": "Frakce 0/4 – okrový (mlat)", "price": "1 250 Kč/t" },
+                { "name": "Frakce 0/32", "price": "580 Kč/t" },
+                { "name": "Frakce 0/63", "price": "580 Kč/t" },
+                { "name": "Frakce 4/8", "price": "890 Kč/t" },
+                { "name": "Frakce 8/16", "price": "650 Kč/t" },
+                { "name": "Frakce 16/32", "price": "650 Kč/t" },
+                { "name": "Frakce 32/63", "price": "650 Kč/t" },
+                { "name": "Frakce 63/180 (vhodný do gabionu)", "price": "900 Kč/t" },
+                { "name": "Frakce 500/1500", "price": "900 Kč/t" }
+            ]
         },
-        "containers-6t": {
-            "name": "Nosič kontejnerů - nosnost 6,5t",
-            "price": "45,-Kč/km, 700,-Kč/hod"
+        {
+            "subheader": "Kačírky – Labský praný (říční)",
+            "items": [
+                { "name": "Frakce 4/8", "price": "750 Kč/t" },
+                { "name": "Frakce 8/16", "price": "450 Kč/t" },
+                { "name": "Frakce 16/32", "price": "450 Kč/t" },
+                { "name": "Frakce 32/63", "price": "450 Kč/t" }
+            ]
         },
-        "containers-10t": {
-            "name": "Nosič kontejnerů - nosnost 10t",
-            "price": "55,-Kč/km, 850,-Kč/hod"
+        {
+            "subheader": "Kačírky – Kaznějov (šedobílý)",
+            "items": [
+                { "name": "Frakce 4/8 (drcený)", "price": "1 550 Kč/t" },
+                { "name": "Frakce 4/8", "price": "1 250 Kč/t" },
+                { "name": "Frakce 16/22", "price": "1 250 Kč/t" },
+                { "name": "Frakce 50/120", "price": "1 250 Kč/t" }
+            ]
+        },
+        {
+            "subheader": "Valouny okrasné",
+            "items": [
+                { "name": "Labské valouny 100/250", "price": "8 000 Kč/t" },
+                { "name": "Labské valouny 100/1000", "price": "10 000 Kč/t" },
+                { "name": "Bílé valouny 50/500", "price": "18 000 Kč/t" }
+            ]
+        },
+        {
+            "subheader": "Písky",
+            "items": [
+                { "name": "Maltový 0/2", "price": "550 Kč/t" },
+                { "name": "Betonářský 0/4", "price": "450 Kč/t" },
+                { "name": "Křemičitý písek 1/2 (bílý, vhodný k úpravě trávníku)", "price": "1 000 Kč/t" },
+                { "name": "Zásypový písek", "price": "250 Kč/t" }
+            ]
+        },
+        {
+            "subheader": "Ostatní",
+            "items": [
+                { "name": "Pískovec 150/2000", "price": "3 000 Kč/t" },
+                { "name": "Žulové prvky – obrubník, patník, schody", "price": "cena dohodou" },
+                { "name": "Betonový recyklát 0/70", "price": "250 Kč/t" },
+                { "name": "Mulčovací kůra (volně ložená)", "price": "1 250 Kč/m³" },
+                { "name": "Kompost (volně ložený)", "price": "1 500 Kč/m³" },
+                { "name": "Zavlhlé betonové směsi", "price": "cena dohodou" }
+            ]
         }
-    },
-    "machines": {
-        "excavator-yannmar": {
-            "name": "Mini bagr Yannmar 1,5t",
-            "price": "850,-Kč/hod (hydr. kladivo + 200,-Kč/hod)"
+    ],
+    "machines": [
+        {
+            "subheader": "Pásové bagry",
+            "items": [
+                { "name": "Minibagr YANNMAR 1,5t", "price": "850 Kč/hod (hydraulické kladivo +200 Kč/hod)" },
+                { "name": "Minibagr CAT 3,5t", "price": "900 Kč/hod (hydraulické kladivo +200 Kč/hod)" },
+                { "name": "Minibagr Wacker 6t", "price": "1 000 Kč/hod (hydraulické kladivo +200 Kč/hod)" }
+            ]
         },
-        "excavator-cat": {
-            "name": "Mini bagr CAT 3,5t",
-            "price": "900,-Kč/hod (hydr. kladivo + 200,-Kč/hod)"
+        {
+            "subheader": "Kolové bagry",
+            "items": [
+                { "name": "ATLAS 9t", "price": "1 400 Kč/hod" }
+            ]
         },
-        "excavator-wacker": {
-            "name": "Mini bagr Wacker 6t",
-            "price": "1000,-Kč/hod (hydr. kladivo + 200,-Kč/hod)"
+        {
+            "subheader": "Pásové nakladače",
+            "items": [
+                { "name": "Pásový mininakladač DITCH WITCH SK900", "price": "800 Kč/hod (zakládání trávníků +200 Kč/hod, rotační hrábě +200 Kč/hod)" }
+            ]
         },
-        "excavator-atlas": {
-            "name": "Kolový bagr Atlas 9t",
-            "price": "1400,-Kč/hod"
+        {
+            "subheader": "Kolové nakladače",
+            "items": [
+                { "name": "WACKER WL28 3t", "price": "900 Kč/hod" },
+                { "name": "CAT 908 7t", "price": "1 250 Kč/hod" }
+            ]
         },
-        "loader-wecker": {
-            "name": "Kolový nakladač Wacker Neuson WL28",
-            "price": "900,-Kč/hod"
+        {
+            "subheader": "Dempry",
+            "items": [
+                { "name": "Kolový Wacker DW15", "price": "750 Kč/hod" },
+                { "name": "Pásový YANNMAR CR08", "price": "750 Kč/hod" }
+            ]
         },
-        "loader-cat": {
-            "name": "Kolový nakladač CAT 1,3m³ (vidle)",
-            "price": "1250,-Kč/hod"
+        {
+            "subheader": "Traktory",
+            "items": [
+                { "name": "Kolový traktor Zetor Proxima", "price": "1 200 Kč/hod" },
+                { "name": "Kolový minitraktor Zetor Compax", "price": "1 200 Kč/hod" },
+                { "name": "Jednonápravový nosič nářadí Ferrari 340", "price": "1 000 Kč/hod" }
+            ]
         },
-        "dumper-wacker": {
-            "name": "Dempr Wacker DW15",
-            "price": "750,-Kč/hod"
+        {
+            "subheader": "Štěpkovače",
+            "items": [
+                { "name": "Tažený štěpkovač Fliet (do průměru 10 cm)", "price": "1 500 Kč/hod" },
+                { "name": "Tažený drtič bioodpadu Pezzoláto S9000", "price": "4 000 Kč/hod" }
+            ]
         },
-        "dumper-yannmar": {
-            "name": "Pásový dempr Yannmar CR08",
-            "price": "750,-Kč/hod"
-        },
-        "recycle-farwick": {
-            "name": "Mobilní třídička Farwick výkon až 100 t/h",
-            "price": "2500,-Kč/hod"
-        },
-        "concrete-cutting": {
-            "name": "Řezání betonu a živice do 15 cm",
-            "price": "200,-Kč/m + přistavení stroje"
-        },
-        "tractor-zetor-proxima": {
-            "name": "Kolový traktor Zetor Proxima (rotavátor,pluh)",
-            "price": "1200,-Kč/hod"
-        },
-        "tractor-zetor-compax": {
-            "name": "Kolový traktor Zetor Compax 25 (zakladač trávníku, rotační brány, mulčovač)",
-            "price": "1200,-Kč/hod"
-        },
-        "steppe-farmer": {
-            "name": "Štěpkovač, drtič Pezzolato S9000",
-            "price": "4000,-Kč/hod"
-        },
-        "tools-carrier": {
-            "name": "Nosič nářadí Ferari 340 (zakladač trávníku, rotační brány, pařezová fréza, rotavátor, mulčovač)",
-            "price": "1000,-Kč/hod"
-        },
-        "steppe-farmer-eliet": {
-            "name": "Štěpkovač Fliet",
-            "price": "1500,-Kč/hod"
-        },
-        "loader-ditch-witch-sk800": {
-            "name": "Pásový nakladač DITCH WITCH SK900",
-            "price": "800,-Kč/hod (zakládání trávníku + 200,-Kč/hod, rotační hrábě + 200,-Kč/hod)"
+        {
+            "subheader": "Ostatní",
+            "items": [
+                { "name": "Mobilní třídička výkon cca 100 t/hod", "price": "2 500 Kč/hod" },
+                { "name": "Řezání betonu a živice do 15 cm", "price": "200 Kč/m + přistavení stroje" }
+            ]
         }
-    },
-    "garden-maintenance": {
-        "manual-work": {
-            "name": "Manuální práce",
-            "price": "450,-Kč/hod"
-        },
-        "grass-cut": {
-            "name": "Údržba trávníku, seč v rovině",
-            "price": "6,-Kč/m²"
-        },
-        "grass-verticuttor": {
-            "name": "Údržba trávníku, vertikutace v rovině",
-            "price": "10,-Kč/m²"
-        },
-        "grass-aerator": {
-            "name": "Údržba trávníku, aerifikace v rovině",
-            "price": "15,-Kč/m²"
-        },
-        "grass-sand": {
-            "name": "Údržba trávníku, pískování",
-            "price": "10,-Kč/m²"
-        },
-        "grass-fertilizer": {
-            "name": "Údržba trávníku, pohnojení dlouhodobým hnojivem (cena je odvislá podle druhu hnojiva)",
-            "price": "5,-Kč/m²"
-        },
-        "perennial-cut-low": {
-            "name": "Řez dřevin a trvalek, strojní práce pozemní (do 2m)",
-            "price": "550,-Kč/hod"
-        },
-        "perennial-cut-high": {
-            "name": "Řez dřevin a trvalek, strojní práce ve výšce od 2m do 4m",
-            "price": "620,-Kč/hod"
-        },
-        "trees-cut-low": {
-            "name": "Péče o stromy, prořez ze země do 3m",
-            "price": "650,-Kč/hod"
-        },
-        "trees-cut-high": {
-            "name": "Péče o stromy, prořez ze žebříku od 3m do 5m",
-            "price": "750,-Kč/hod"
-        },
-        "spray-manual": {
-            "name": "Postřik přípravku na ochranu rostlin ruční",
-            "price": "550,-Kč/hod"
-        },
-        "spray-automat": {
-            "name": "Postřik přípravku na ochranu rostlin s motorovým postřikovačem",
-            "price": "650,-Kč/hod"
-        },
-        "total-herbicide": {
-            "name": "Aplikace totálního herbicidu včetně přípravku (cena je odvislá podle druhu herbicidu)",
-            "price": "9,-Kč/m²"
+    ],
+    "garden-maintenance": [
+        {
+            "items": [
+                { "name": "Manuální práce", "price": "450 Kč/hod" },
+                { "name": "Údržba trávníku, seč v rovině", "price": "6 Kč/m²" },
+                { "name": "Údržba trávníku, vertikutace v rovině", "price": "10 Kč/m²" },
+                { "name": "Údržba trávníku, aerifikace v rovině", "price": "15 Kč/m²" },
+                { "name": "Údržba trávníku, pískování", "price": "10 Kč/m²" },
+                { "name": "Údržba trávníku, pohnojení dlouhodobým hnojivem (cena odvislá podle druhu hnojiva)", "price": "5 Kč/m²" },
+                { "name": "Řez dřevin a trvalek, strojní práce pozemní (do 2 m)", "price": "550 Kč/hod" },
+                { "name": "Řez dřevin a trvalek, strojní práce ve výšce od 2 m do 4 m", "price": "620 Kč/hod" },
+                { "name": "Péče o stromy, prořez ze země do 3 m", "price": "650 Kč/hod" },
+                { "name": "Péče o stromy, prořez ze žebříku od 3 m do 5 m", "price": "750 Kč/hod" },
+                { "name": "Postřik přípravku na ochranu rostlin ruční", "price": "550 Kč/hod" },
+                { "name": "Postřik přípravku na ochranu rostlin s motorovým postřikovačem", "price": "650 Kč/hod" },
+                { "name": "Aplikace totálního herbicidu včetně přípravku (cena odvislá podle druhu herbicidu)", "price": "9 Kč/m²" }
+            ]
         }
-    }
+    ]
 }

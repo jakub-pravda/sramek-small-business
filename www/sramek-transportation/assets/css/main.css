@@ -1101,6 +1101,18 @@ section {
   margin-right: auto;
 }
 
+.pricing .table td {
+  vertical-align: top;
+}
+
+.pricing .table .pricing-subheader {
+  font-weight: 700;
+  padding-top: 1.2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #ddd;
+  color: var(--heading-color);
+}
+
 @media (max-width: 992px) {
   .pricing .box {
     max-width: 60%;
