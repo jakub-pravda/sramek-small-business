@@ -22,12 +22,11 @@
 const HOLIDAY_HOURS = [
   // Add entries here, e.g.:
   {
-    title: "Velikonoční svátky",
+    title: "Den upálení mistra Jana Husa (6.7.)",
     lines: [
-      "Velký pátek 3.4.: 8:00 - 12:00",
-      "Velikonoční pondělí 6.4.: Zavřeno",
+      "Zavřeno",
     ],
-    until: "2026-04-07",
+    until: "2026-07-06",
   },
 ];
 
