@@ -3076,6 +3076,50 @@ button:disabled,
     background-color: #2e3842;
 }
 
+.relocation-notice {
+    padding: 1.5em 0;
+    background-color: rgb(10, 92, 54);
+}
+
+.relocation-notice .inner {
+    width: auto;
+    max-width: 60em;
+    padding: 0 2em;
+}
+
+.relocation-notice p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.35em;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.relocation-notice p .icon {
+    margin-right: 0.35em;
+    color: #ffffff;
+}
+
+.relocation-notice a {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.relocation-notice a:hover {
+    color: #d9f2e5;
+}
+
+@media screen and (max-width: 736px) {
+    .relocation-notice {
+        padding: 1.25em 0;
+    }
+
+    .relocation-notice p {
+        font-size: 1.1em;
+    }
+}
+
 .wrapper.style3 {
     background-color: rgb(29, 36, 42);
     color: #d3d4e4;
