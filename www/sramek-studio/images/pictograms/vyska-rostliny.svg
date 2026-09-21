@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <g>
+    <g>
+      <path d="M152.32,52.06c-3.77.66-7.18,2.14-10.09,4.24.2-.97.35-1.96.43-2.97,1.07-13.43-8.95-25.19-22.38-26.26-13.43-1.07-25.19,8.95-26.26,22.38-.14,1.72-.09,3.41.12,5.05-5.22-4-12.03-5.9-19.03-4.68-13.27,2.31-22.16,14.94-19.86,28.21,1.97,11.32,11.44,19.44,22.42,20.16-6.44,5.41-9.91,13.99-8.36,22.87,2.31,13.27,14.94,22.16,28.21,19.86,8.62-1.5,17.31-7.37,20.37-14.92,3.83,11.13,13.35,18.16,25.31,16.08,13.27-2.31,22.16-14.94,19.86-28.21-.92-5.31-3.5-9.91-7.11-13.38,1.55.03,3.13-.08,4.72-.35,13.27-2.31,22.16-14.94,19.86-28.21-2.31-13.27-14.94-22.16-28.21-19.86Z" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+      <circle cx="117.19" cy="84.88" r="17.37" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    </g>
+    <path d="M117.9,126v135" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <path d="M147.57,200.48c10.52,9.96,30.62,9.14,46.66-6.93,16.12-16.15,23.57-63.12,23.57-63.12,0,0-51.98,8.83-68.6,28.82-12.49,15.01-11.57,31.81-1.63,41.23Z" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <path d="M180.79,167.77c-12.53,10.63-50.56,33.65-62.89,57.23" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <path d="M88.23,200.48c-10.52,9.96-30.62,9.14-46.66-6.93-16.12-16.15-23.57-63.12-23.57-63.12,0,0,51.98,8.83,68.6,28.82,12.49,15.01,11.57,31.81,1.63,41.23Z" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <path d="M55.01,167.77c12.53,10.63,50.56,33.65,62.89,57.23" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+  </g>
+  <g>
+    <line x1="250.17" y1="261" x2="250.17" y2="36" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <line x1="250.17" y1="27" x2="230.34" y2="47.13" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <line x1="250.17" y1="27" x2="270" y2="46.61" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <line x1="250.17" y1="261" x2="270" y2="240.87" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <line x1="250.17" y1="261" x2="230.34" y2="241.39" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+  </g>
+</svg>

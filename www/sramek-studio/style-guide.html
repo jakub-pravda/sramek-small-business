@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Style Guide — Studio Šrámek</title>
+    <meta name="description" content="Živý katalog vizuálních pravidel, komponent a přenositelného HTML Studia Šrámek.">
+    <link rel="shortcut icon" href="favicon.svg?v=3">
+    <link rel="icon" href="favicon.svg?v=3" sizes="any" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg?v=3">
+    <link rel="canonical" href="https://www.studio-sramek.cz/style-guide">
+    <meta name="robots" content="noindex, follow">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style-guide.css">
+  </head>
+  <body>
+    <div class="sg-page">
+      <header class="sg-topbar">
+        <a href="index.html" class="sg-brand" aria-label="Studio Šrámek – homepage">
+          <img src="images/logos/architektura-zjednodusene-horizontalni-black.svg" alt="Studio Šrámek">
+        </a>
+        <span>Style guide · v0.18.1</span>
+        <a href="index.html" class="button button--dark">Zpět na homepage</a>
+      </header>
+      <aside class="sg-sidebar" aria-label="Obsah Style Guide">
+        <p>Obsah</p>
+        <a href="#principy">Principy</a>
+        <a href="#loga">Logotypy</a>
+        <a href="#barvy">Barvy</a>
+        <a href="#typografie">Typografie</a>
+        <a href="#layout">Grid &amp; spacing</a>
+        <a href="#motion">Motion</a>
+        <a href="#piktogramy">Piktogramy</a>
+        <a href="#ui">UI prvky</a>
+        <a href="#komponenty">Komponenty</a>
+        <a href="#signature">Signature &amp; motion</a>
+        <a href="#predani">Předání vývojáři</a>
+      </aside>
+      <main class="sg-main">
+        <section class="sg-intro" id="principy">
+          <p class="eyebrow eyebrow--light">Studio Šrámek · živý design systém</p>
+          <h1>Jedno místo pro vizuální pravidla, živé prvky a přenositelný kód.</h1>
+          <p>Tato stránka používá stejné tokeny, fonty, assety a komponentové třídy jako homepage. Aktualizuje se při každém potvrzeném milníku projektu.</p>
+          <div class="sg-status">
+            <span>Aktuální systém</span>
+            <b>v0.18.1</b>
+            <small>HTML + externí CSS + malý vanilla JavaScript</small>
+          </div>
+        </section>
+        <section class="sg-section" id="loga">
+          <div class="sg-section-heading">
+            <p class="eyebrow">01 · Identita</p>
+            <h2>Logotypy</h2>
+            <p>Pro navigaci a patičku používáme zjednodušenou horizontální variantu bez claimu. Vždy vybíráme verzi podle kontrastu podkladu.</p>
+          </div>
+          <div class="sg-logo-grid">
+            <article class="sg-logo-card sg-logo-card--light">
+              <img src="images/logos/architektura-zjednodusene-horizontalni-black.svg" alt="Černá varianta loga">
+              <div>
+                <b>Tmavé logo</b>
+                <code>…-black.svg</code>
+              </div>
+            </article>
+            <article class="sg-logo-card sg-logo-card--dark">
+              <img src="images/logos/architektura-zjednodusene-horizontalni-white.svg" alt="Bílá varianta loga">
+              <div>
+                <b>Světlé logo</b>
+                <code>…-white.svg</code>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="sg-section" id="barvy">
+          <div class="sg-section-heading">
+            <p class="eyebrow">02 · Foundations</p>
+            <h2>Barevný systém</h2>
+            <p>Omezená přírodní paleta vychází z projektové dokumentace. Hodnoty jsou současně CSS custom properties.</p>
+          </div>
+          <div class="sg-color-grid">
+            <article class="sg-color">
+              <span style="background:#0F251F"></span>
+              <div>
+                <b>Stín jehličnanu</b>
+                <code>#0F251F</code>
+                <p>Hlavní tmavá barva značky</p>
+              </div>
+            </article>
+            <article class="sg-color">
+              <span style="background:#204034"></span>
+              <div>
+                <b>Zahradní zeleň</b>
+                <code>#204034</code>
+                <p>Primární zelená</p>
+              </div>
+            </article>
+            <article class="sg-color">
+              <span style="background:#BABFB4"></span>
+              <div>
+                <b>Šalvějový kámen</b>
+                <code>#BABFB4</code>
+                <p>Světlá doprovodná barva</p>
+              </div>
+            </article>
+            <article class="sg-color">
+              <span style="background:#FFFFFF"></span>
+              <div>
+                <b>Sněhová bílá</b>
+                <code>#FFFFFF</code>
+                <p>Základní světlé pozadí</p>
+              </div>
+            </article>
+            <article class="sg-color">
+              <span style="background:#000000"></span>
+              <div>
+                <b>Uhlová černá</b>
+                <code>#000000</code>
+                <p>Technická a textová barva</p>
+              </div>
+            </article>
+            <article class="sg-color">
+              <span style="background:#74261F"></span>
+              <div>
+                <b>Hliněná červeň</b>
+                <code>#74261F</code>
+                <p>Výrazný akcent</p>
+              </div>
+            </article>
+            <article class="sg-color">
+              <span style="background:#59392F"></span>
+              <div>
+                <b>Kůrová hněď</b>
+                <code>#59392F</code>
+                <p>Tmavý zemitý doplněk</p>
+              </div>
+            </article>
+            <article class="sg-color">
+              <span style="background:#A6886D"></span>
+              <div>
+                <b>Pískovec</b>
+                <code>#A6886D</code>
+                <p>Přirozená střední barva</p>
+              </div>
+            </article>
+            <article class="sg-color">
+              <span style="background:#D9C2A7"></span>
+              <div>
+                <b>Lněná smetana</b>
+                <code>#D9C2A7</code>
+                <p>Hlavní teplý světlý odstín</p>
+              </div>
+            </article>
+            <article class="sg-color">
+              <span style="background:#F2F2F2"></span>
+              <div>
+                <b>Mlžná bílá</b>
+                <code>#F2F2F2</code>
+                <p>Jemné neutrální pozadí</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="sg-section" id="typografie">
+          <div class="sg-section-heading">
+            <p class="eyebrow">03 · Foundations</p>
+            <h2>Typografie</h2>
+            <p>CoFo Gothic je licencovaný projektový font. Lehká váha nese velké nadpisy, regular běžný text a medium navigační a technické informace.</p>
+          </div>
+          <div class="sg-type-stack">
+            <article>
+              <span>Display · Light</span>
+              <h2>Zahrada je místo, kde vzniká přirozený rytmus.</h2>
+              <code>clamp(3.4rem, 7vw, 7.3rem) · 300 · 0.93</code>
+            </article>
+            <article>
+              <span>Heading · Light</span>
+              <h3>Každá zahrada má svůj vlastní charakter.</h3>
+              <code>clamp(3rem, 5.4vw, 6rem) · 300 · 1</code>
+            </article>
+            <article>
+              <span>Body · Regular</span>
+              <p>Navrhujeme zahrady jako přirozenou součást života, místa a architektury. Text zůstává klidný, čitelný a věcný.</p>
+              <code>1rem · 400 · 1.55</code>
+            </article>
+            <article>
+              <span>Eyebrow · Medium</span>
+              <p class="eyebrow">Atmosféra místa</p>
+              <code>0.69rem · 500 · tracking 0.16em</code>
+            </article>
+          </div>
+        </section>
+        <section class="sg-section" id="layout">
+          <div class="sg-section-heading">
+            <p class="eyebrow">04 · Foundations</p>
+            <h2>Grid &amp; spacing</h2>
+            <p>Vlastní grid používá předvídatelný kontejner a omezenou 8px prostorovou škálu bez Bootstrap závislosti.</p>
+          </div>
+          <div class="sg-grid-demo" aria-label="Ukázka dvanáctisloupcového gridu">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>11</span>
+            <span>12</span>
+          </div>
+          <div class="sg-spacing">
+            <div>
+              <span style="width:8px"></span>
+              <code>8px</code>
+            </div>
+            <div>
+              <span style="width:16px"></span>
+              <code>16px</code>
+            </div>
+            <div>
+              <span style="width:24px"></span>
+              <code>24px</code>
+            </div>
+            <div>
+              <span style="width:32px"></span>
+              <code>32px</code>
+            </div>
+            <div>
+              <span style="width:48px"></span>
+              <code>48px</code>
+            </div>
+            <div>
+              <span style="width:64px"></span>
+              <code>64px</code>
+            </div>
+          </div>
+        </section>
+        <section class="sg-section" id="motion">
+          <div class="sg-section-heading">
+            <p class="eyebrow">05 · Foundations</p>
+            <h2>Motion</h2>
+            <p>Pohyb podporuje orientaci a rytmus. Nikdy není podmínkou pro pochopení obsahu a respektuje <code>prefers-reduced-motion</code>.</p>
+          </div>
+          <div class="sg-motion-grid">
+            <article>
+              <i class="sg-motion-dot sg-motion-dot--standard"></i>
+              <b>Standard</b>
+              <code>cubic-bezier(.22, 1, .36, 1)</code>
+              <p>Ovládání, posuny a jasná odezva.</p>
+            </article>
+            <article>
+              <i class="sg-motion-dot sg-motion-dot--soft"></i>
+              <b>Soft</b>
+              <code>cubic-bezier(.16, 1, .3, 1)</code>
+              <p>Reveal, dialogy a měkké přechody.</p>
+            </article>
+            <article>
+              <div class="sg-duration">
+                <span>220</span>
+                <span>480</span>
+                <span>800</span>
+              </div>
+              <b>Duration</b>
+              <code>fast · medium · slow</code>
+              <p>Tři sdílené časové úrovně.</p>
+            </article>
+          </div>
+        </section>
+        <section class="sg-section" id="piktogramy">
+          <div class="sg-section-heading">
+            <p class="eyebrow">06 · Assets</p>
+            <h2>Piktogramy</h2>
+            <p>Jednotná linková sada slouží jako informační podpora. Dekorativní použití držíme střídmé.</p>
+          </div>
+          <div class="sg-icon-grid">
+            <article>
+              <img src="images/pictograms/kvetina.svg" alt="">
+              <code>kvetina.svg</code>
+            </article>
+            <article>
+              <img src="images/pictograms/rozmery.svg" alt="">
+              <code>rozmery.svg</code>
+            </article>
+            <article>
+              <img src="images/pictograms/ryc.svg" alt="">
+              <code>ryc.svg</code>
+            </article>
+            <article>
+              <img src="images/pictograms/nuzky.svg" alt="">
+              <code>nuzky.svg</code>
+            </article>
+            <article>
+              <img src="images/pictograms/slunce.svg" alt="">
+              <code>slunce.svg</code>
+            </article>
+            <article>
+              <img src="images/pictograms/kapka.svg" alt="">
+              <code>kapka.svg</code>
+            </article>
+            <article>
+              <img src="images/pictograms/cas.svg" alt="">
+              <code>cas.svg</code>
+            </article>
+            <article>
+              <img src="images/pictograms/sazenicka.svg" alt="">
+              <code>sazenicka.svg</code>
+            </article>
+          </div>
+        </section>
+        <section class="sg-section" id="ui">
+          <div class="sg-section-heading">
+            <p class="eyebrow">07 · UI</p>
+            <h2>Tlačítka a odkazy</h2>
+            <p>Primární akce používá kontrastní plnou plochu. Obrys a textový odkaz jsou určeny pro vedlejší volby.</p>
+          </div>
+          <div class="sg-preview sg-preview--buttons">
+            <div class="button-row">
+              <a class="button button--dark" href="#predani">Primární akce</a>
+              <a class="button button--outline" href="#predani">Sekundární akce</a>
+              <a class="text-link" href="#predani">Textový odkaz <span>↗</span></a>
+            </div>
+          </div>
+          <div class="sg-code">
+            <button class="sg-copy" type="button" aria-live="polite">Kopírovat HTML</button>
+            <pre>
+              <code>&lt;div class=&quot;button-row&quot;&gt; &lt;a class=&quot;button button--dark&quot; href=&quot;#&quot;&gt;Primární akce&lt;/a&gt; &lt;a class=&quot;button button--outline&quot; href=&quot;#&quot;&gt;Sekundární akce&lt;/a&gt; &lt;/div&gt;</code>
+            </pre>
+          </div>
+        </section>
+        <section class="sg-section" id="komponenty">
+          <div class="sg-section-heading">
+            <p class="eyebrow">08 · Components</p>
+            <h2>Živé komponenty</h2>
+            <p>Ukázky používají stejné veřejné CSS třídy jako homepage. HTML lze převzít bez Reactu nebo build nástroje.</p>
+          </div>
+          <article class="sg-component">
+            <div class="sg-component-title">
+              <div>
+                <h3>Projektová karta</h3>
+                <p>Obrazový nosič realizace s názvem, místem a rokem.</p>
+              </div>
+              <code>.project-card</code>
+            </div>
+            <div class="sg-preview sg-project-preview">
+              <a class="project-card sg-project-card" href="#predani">
+                <img src="images/photos/zahrada-1.webp" alt="Zahrada u rodinného domu">
+                <span class="project-meta">
+                  <b>Zahrada u rodinného domu</b>
+                  <small>Brandýs nad Labem · 2025</small>
+                </span>
+              </a>
+            </div>
+            <div class="sg-code">
+              <button class="sg-copy" type="button" aria-live="polite">Kopírovat HTML</button>
+              <pre>
+                <code>&lt;a class=&quot;project-card&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;images/photos/zahrada-1.webp&quot; alt=&quot;Zahrada u rodinného domu&quot;&gt; &lt;span class=&quot;project-meta&quot;&gt; &lt;b&gt;Zahrada u rodinného domu&lt;/b&gt; &lt;small&gt;Brandýs nad Labem · 2025&lt;/small&gt; &lt;/span&gt; &lt;/a&gt;</code>
+              </pre>
+            </div>
+          </article>
+          <article class="sg-component">
+            <div class="sg-component-title">
+              <div>
+                <h3>Karta služby</h3>
+                <p>Jedna ze čtyř hlavních oblastí nabídky.</p>
+              </div>
+              <code>.service-card</code>
+            </div>
+            <div class="sg-preview sg-service-preview">
+              <article class="service-card">
+                <div>
+                  <span>01</span>
+                  <img src="images/pictograms/kvetina.svg" alt="">
+                </div>
+                <h3>Návrh zahrady</h3>
+                <p>Hledáme charakter místa, jeho možnosti a nejlepší způsob využití.</p>
+                <a href="#predani">Zjistit více <span>↗</span></a>
+              </article>
+            </div>
+            <div class="sg-code">
+              <button class="sg-copy" type="button" aria-live="polite">Kopírovat HTML</button>
+              <pre>
+                <code>&lt;article class=&quot;service-card&quot;&gt; &lt;div&gt;&lt;span&gt;01&lt;/span&gt;&lt;img src=&quot;images/pictograms/kvetina.svg&quot; alt=&quot;&quot;&gt;&lt;/div&gt; &lt;h3&gt;Návrh zahrady&lt;/h3&gt; &lt;p&gt;Hledáme charakter místa, jeho možnosti a nejlepší způsob využití.&lt;/p&gt; &lt;a href=&quot;#&quot;&gt;Zjistit více &lt;span&gt;↗&lt;/span&gt;&lt;/a&gt; &lt;/article&gt;</code>
+              </pre>
+            </div>
+          </article>
+          <article class="sg-component">
+            <div class="sg-component-title">
+              <div>
+                <h3>Kontaktní blok</h3>
+                <p>Závěrečná výzva používá linen plochu a jednu hlavní akci.</p>
+              </div>
+              <code>.contact-section</code>
+            </div>
+            <div class="sg-preview sg-contact-preview">
+              <section class="contact-section">
+                <p class="eyebrow">Začněme rozhovorem</p>
+                <h2>Pojďme společně vytvořit místo, kam se budete rádi vracet.</h2>
+                <div class="button-row">
+                  <a class="button button--dark" href="mailto:studio@example.cz">Napsat e-mail</a>
+                </div>
+              </section>
+            </div>
+            <div class="sg-code">
+              <button class="sg-copy" type="button" aria-live="polite">Kopírovat HTML</button>
+              <pre>
+                <code>&lt;section class=&quot;contact-section&quot;&gt; &lt;p class=&quot;eyebrow&quot;&gt;Začněme rozhovorem&lt;/p&gt; &lt;h2&gt;Pojďme společně vytvořit místo, kam se budete rádi vracet.&lt;/h2&gt; &lt;div class=&quot;button-row&quot;&gt; &lt;a class=&quot;button button--dark&quot; href=&quot;mailto:studio@example.cz&quot;&gt;Napsat e-mail&lt;/a&gt; &lt;/div&gt; &lt;/section&gt;</code>
+              </pre>
+            </div>
+          </article>
+          <article class="sg-component">
+            <div class="sg-component-title">
+              <div>
+                <h3>FAQ akordeon</h3>
+                <p>Pět nejčastějších otázek v přístupném nativním akordeonu.</p>
+              </div>
+              <span class="sg-scope sg-scope--portable">Přenositelná komponenta</span>
+            </div>
+            <div class="sg-preview sg-faq-preview">
+              <section class="ss-faq ss-faq--compact" aria-labelledby="sg-faq-title">
+                <div class="ss-faq__heading">
+                  <p class="eyebrow">Praktické informace</p>
+                  <h2 id="sg-faq-title">Na co se často ptáte.</h2>
+                </div>
+                <div class="ss-faq__list">
+                  <details class="ss-faq__item" name="sg-studio-faq" open>
+                    <summary>
+                      <span><small>01</small>Kdy je nejlepší začít s návrhem zahrady?</span>
+                      <i aria-hidden="true"></i>
+                    </summary>
+                    <div class="ss-faq__answer">
+                      <div>
+                        <p>Ideálně ve chvíli, kdy se připravuje dům nebo jeho rekonstrukce. Návrh ale dokážeme citlivě zapojit i do již hotového prostoru; důležitý je dostatek času na zaměření, koncepci a návaznost jednotlivých profesí.</p>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="ss-faq__item" name="sg-studio-faq">
+                    <summary>
+                      <span><small>02</small>Co všechno návrh zahrady obsahuje?</span>
+                      <i aria-hidden="true"></i>
+                    </summary>
+                    <div class="ss-faq__answer">
+                      <div>
+                        <p>Rozsah vždy přizpůsobíme místu a vašim potřebám. Obvykle zahrnuje celkovou koncepci, práci s prostorem, materiály a výsadbou a podle dohody také podklady potřebné pro přesnou realizaci.</p>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="ss-faq__item" name="sg-studio-faq">
+                    <summary>
+                      <span><small>03</small>Můžete zajistit také samotnou realizaci?</span>
+                      <i aria-hidden="true"></i>
+                    </summary>
+                    <div class="ss-faq__answer">
+                      <div>
+                        <p>Ano. Na návrh může navázat projekt, realizace i následná péče. Díky tomu zůstává původní myšlenka čitelná od prvního náčrtu až po hotovou zahradu.</p>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="ss-faq__item" name="sg-studio-faq">
+                    <summary>
+                      <span><small>04</small>Navrhujete i menší nebo již založené zahrady?</span>
+                      <i aria-hidden="true"></i>
+                    </summary>
+                    <div class="ss-faq__answer">
+                      <div>
+                        <p>Ano. Smysluplná změna nemusí znamenat kompletní přestavbu. Často stačí dobře pojmenovat problém, upravit strukturu, doplnit výsadbu nebo vytvořit přirozenější vazbu mezi domem a zahradou.</p>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="ss-faq__item" name="sg-studio-faq">
+                    <summary>
+                      <span><small>05</small>Jak dlouho celý proces obvykle trvá?</span>
+                      <i aria-hidden="true"></i>
+                    </summary>
+                    <div class="ss-faq__answer">
+                      <div>
+                        <p>Záleží na velikosti, rozsahu dokumentace a roční době. Po úvodním setkání proto připravíme srozumitelný postup a orientační harmonogram, abyste od začátku věděli, co bude následovat.</p>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </section>
+            </div>
+            <div class="sg-code">
+              <button class="sg-copy" type="button" aria-live="polite">Kopírovat HTML</button>
+              <pre>
+                <code>&lt;section class=&quot;ss-faq&quot; aria-labelledby=&quot;faq-title&quot;&gt; &lt;div class=&quot;ss-faq__heading&quot;&gt;&lt;p class=&quot;eyebrow&quot;&gt;Praktické informace&lt;/p&gt;&lt;h2 id=&quot;faq-title&quot;&gt;Na co se často ptáte.&lt;/h2&gt;&lt;/div&gt; &lt;div class=&quot;ss-faq__list&quot;&gt; &lt;details class=&quot;ss-faq__item&quot; name=&quot;studio-faq&quot;&gt; &lt;summary&gt;&lt;span&gt;&lt;small&gt;01&lt;/small&gt;Kdy je nejlepší začít s návrhem zahrady?&lt;/span&gt;&lt;i aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/summary&gt; &lt;div class=&quot;ss-faq__answer&quot;&gt;&lt;div&gt;&lt;p&gt;Odpověď…&lt;/p&gt;&lt;/div&gt;&lt;/div&gt; &lt;/details&gt; &lt;/div&gt; &lt;/section&gt;</code>
+              </pre>
+            </div>
+            <div class="sg-package">
+              <b>Kompletní balíček v0.18.1</b>
+              <div>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/faq/faq.html">faq.html ↗</a>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/faq/faq.css">faq.css ↗</a>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/faq/faq.js">faq.js ↗</a>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/faq/README.md">README.md ↗</a>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="sg-section sg-signature" id="signature">
+          <div class="sg-section-heading">
+            <p class="eyebrow">09 · Signature</p>
+            <h2>Signature &amp; Motion Components</h2>
+            <p>Výrazné prvky identity mají živý náhled i jasnou hranici mezi přenositelným základem a integrační logikou celé stránky.</p>
+          </div>
+          <article class="sg-component">
+            <div class="sg-component-title">
+              <div>
+                <h3>Filmové hero</h3>
+                <p>Čtyři překryté fotografie, synchronní claim a bezpečný Firefox fallback.</p>
+              </div>
+              <span class="sg-scope sg-scope--integration">Integrační komponenta</span>
+            </div>
+            <div class="hero sg-hero-demo" data-ss-hero>
+              <div class="hero-media">
+                <img class="hero-image is-active" src="images/photos/relax-na-zahrade.webp" alt="Klid v zahradě" data-claim="kde si člověk odpočine.">
+                <img class="hero-image" src="images/photos/zena-v-zahrade.webp" alt="Návrat do zahrady" data-claim="kam se člověk rád vrací.">
+                <img class="hero-image" src="images/photos/deti.webp" alt="Děti v zahradě" data-claim="kde si hrají děti.">
+                <img class="hero-image" src="images/photos/spolecne-chvilky.webp" alt="Setkání v zahradě" data-claim="kde se setkáváme s přáteli.">
+                <div class="hero-shade"></div>
+              </div>
+              <div class="hero-content">
+                <p class="eyebrow eyebrow--light">Studio Šrámek</p>
+                <h1>
+                  <span>Zahrada je místo,</span>
+                  <strong data-ss-hero-claim>kde si člověk odpočine.</strong>
+                </h1>
+              </div>
+              <div class="hero-controls" aria-label="Výběr snímku">
+                <button type="button" aria-label="Zobrazit snímek 1" aria-current="true" class="hero-dot is-active">
+                  <span>01</span>
+                  <i></i>
+                </button>
+                <button type="button" aria-label="Zobrazit snímek 2" aria-current="false" class="hero-dot">
+                  <span>02</span>
+                  <i></i>
+                </button>
+                <button type="button" aria-label="Zobrazit snímek 3" aria-current="false" class="hero-dot">
+                  <span>03</span>
+                  <i></i>
+                </button>
+                <button type="button" aria-label="Zobrazit snímek 4" aria-current="false" class="hero-dot">
+                  <span>04</span>
+                  <i></i>
+                </button>
+              </div>
+            </div>
+            <div class="sg-tech-grid">
+              <div>
+                <b>Přenositelné</b>
+                <p>Markup, vrstvení, crossfade, claim a ovládání.</p>
+              </div>
+              <div>
+                <b>Integrace homepage</b>
+                <p>Preload, časování, pomalejší exit scroll a textová synchronizace.</p>
+              </div>
+              <div>
+                <b>Fallback</b>
+                <p>Firefox: blur crossfade bez transformace. Reduced motion: statický první snímek.</p>
+              </div>
+            </div>
+            <div class="sg-code">
+              <button class="sg-copy" type="button" aria-live="polite">Kopírovat HTML</button>
+              <pre>
+                <code>&lt;section class=&quot;hero&quot; data-hero&gt; &lt;div class=&quot;hero-media&quot;&gt; &lt;img class=&quot;hero-image is-active&quot; src=&quot;images/photos/relax-na-zahrade.webp&quot; alt=&quot;&quot;&gt; &lt;!-- Další překryté .hero-image vrstvy --&gt; &lt;div class=&quot;hero-shade&quot;&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;hero-content&quot;&gt; &lt;p class=&quot;eyebrow eyebrow--light&quot;&gt;Studio Šrámek&lt;/p&gt; &lt;h1&gt;&lt;span&gt;Zahrada je místo,&lt;/span&gt;&lt;strong&gt;kde si člověk odpočine.&lt;/strong&gt;&lt;/h1&gt; &lt;/div&gt; &lt;/section&gt;</code>
+              </pre>
+            </div>
+            <div class="sg-package">
+              <b>Kompletní balíček v0.18.1</b>
+              <div>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/hero/hero.html">hero.html ↗</a>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/hero/hero.css">hero.css ↗</a>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/hero/hero.js">hero.js ↗</a>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/hero/README.md">README.md ↗</a>
+              </div>
+            </div>
+          </article>
+          <article class="sg-component">
+            <div class="sg-component-title">
+              <div>
+                <h3>Scrollově řízené video</h3>
+                <p>V produkci mapuje průchod sticky sekcí na čas videa. V katalogu lze princip bezpečně vyzkoušet posuvníkem.</p>
+              </div>
+              <span class="sg-scope sg-scope--integration">Integrační efekt</span>
+            </div>
+            <div class="sg-video-demo">
+              <video class="image-claim-media" muted playsinline preload="metadata" poster="images/video/Woman_gently_touching_flower-poster.webp" aria-label="Náhled scrollově řízeného videa">
+                <source src="images/video/Woman_gently_touching_flower-scroll.mp4" type="video/mp4">
+              </video>
+              <div class="sg-video-overlay">
+                <p class="eyebrow eyebrow--light">Rostliny · materiály · čas</p>
+                <h3>Zahrada není hotová v den, kdy ji dokončíme.</h3>
+              </div>
+              <label class="sg-scrubber">
+                <span>Simulace scrollu</span>
+                <input type="range" min="0" max="100" value="0">
+                <output>0%</output>
+              </label>
+            </div>
+            <div class="sg-tech-grid">
+              <div>
+                <b>Asset</b>
+                <p>H.264 · 1280 × 720 · 24 fps · GOP 6 · bez zvuku.</p>
+              </div>
+              <div>
+                <b>Řízení</b>
+                <p>Nativní <code>currentTime</code>, sticky progress a krátký dojezd.</p>
+              </div>
+              <div>
+                <b>Fallback</b>
+                <p>Poster při načítání; reduced motion vypíná sticky prostor i seekování.</p>
+              </div>
+            </div>
+            <div class="sg-code">
+              <button class="sg-copy" type="button" aria-live="polite">Kopírovat HTML</button>
+              <pre>
+                <code>&lt;div class=&quot;image-claim-shell is-tunnel-experiment&quot; data-scroll-tunnel&gt; &lt;section class=&quot;image-claim&quot;&gt; &lt;video class=&quot;image-claim-media&quot; muted playsinline preload=&quot;auto&quot; poster=&quot;images/video/Woman_gently_touching_flower-poster.webp&quot;&gt; &lt;source src=&quot;images/video/Woman_gently_touching_flower-scroll.mp4&quot; type=&quot;video/mp4&quot;&gt; &lt;/video&gt; &lt;div&gt;&lt;!-- eyebrow, h2 a podpůrný text --&gt;&lt;/div&gt; &lt;/section&gt; &lt;/div&gt;</code>
+              </pre>
+            </div>
+            <div class="sg-package">
+              <b>Kompletní balíček v0.18.1</b>
+              <div>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/scroll-video/scroll-video.html">scroll-video.html ↗</a>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/scroll-video/scroll-video.css">scroll-video.css ↗</a>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/scroll-video/scroll-video.js">scroll-video.js ↗</a>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/scroll-video/README.md">README.md ↗</a>
+              </div>
+            </div>
+          </article>
+          <article class="sg-component">
+            <div class="sg-component-title">
+              <div>
+                <h3>Botanický parallax</h3>
+                <p>Jemná hloubková vrstva podporující karty, nikdy dominantní ilustrace.</p>
+              </div>
+              <span class="sg-scope">Volitelný efekt</span>
+            </div>
+            <div class="sg-parallax-demo">
+              <img src="images/graphic-elements/structure.svg" alt="">
+              <div>
+                <p class="eyebrow eyebrow--light">Dekorativní vrstva</p>
+                <h3>Pohyb je pomalejší než obsah.</h3>
+                <p>Výchozí opacity zůstává velmi nízká, aby struktura nesnižovala čitelnost.</p>
+              </div>
+            </div>
+            <div class="sg-tech-grid">
+              <div>
+                <b>Vrstva</b>
+                <p>Samostatný absolutní obrázek mimo obsahový flow.</p>
+              </div>
+              <div>
+                <b>Rozsah</b>
+                <p>Malý posun přes CSS proměnnou, pouze ve viewportu.</p>
+              </div>
+              <div>
+                <b>Fallback</b>
+                <p>Bez JavaScriptu i při reduced motion zůstává jako statická textura.</p>
+              </div>
+            </div>
+          </article>
+          <article class="sg-component">
+            <div class="sg-component-title">
+              <div>
+                <h3>Katalog a detail rostlin</h3>
+                <p>První plně distribuovaná komponenta: carousel, karty a jeden společný dialog.</p>
+              </div>
+              <span class="sg-scope sg-scope--portable">Přenositelná komponenta</span>
+            </div>
+            <div class="ss-plant-catalog sg-plant-demo" data-ss-plant-catalog>
+              <div class="sg-plant-track">
+                <button class="ss-plant-card" type="button" aria-haspopup="dialog" aria-expanded="false" data-plant data-name="Tis červený" data-latin="Taxus baccata" data-description="Stálezelená dřevina s jemnou strukturou, vhodná pro živé ploty, tvarování i klidné solitérní výsadby." data-light="Stín až polostín" data-height="2–5 m" data-care="Nízká" data-image="images/flowers/tis-cerveny.webp" data-alt="Tis červený (Taxus baccata)">
+                  <span class="ss-plant-card__image">
+                    <img src="images/flowers/tis-cerveny.webp" alt="">
+                  </span>
+                  <span class="ss-plant-card__copy">
+                    <b>1. tis červený</b>
+                    <i>Taxus baccata</i>
+                  </span>
+                </button>
+                <button class="ss-plant-card" type="button" aria-haspopup="dialog" aria-expanded="false" data-plant data-name="Cesmína ostrolistá" data-latin="Ilex aquifolium" data-description="Stálezelená dřevina s lesklými tmavě zelenými listy a výraznými červenými plody. V zahradě vytváří celoroční strukturu, soukromí a atraktivní zimní efekt." data-light="Polostín až slunce" data-height="2–6 m" data-care="Nízká" data-image="images/flowers/cesmina-ostrolista.webp" data-alt="Cesmína ostrolistá (Ilex aquifolium)">
+                  <span class="ss-plant-card__image">
+                    <img src="images/flowers/cesmina-ostrolista.webp" alt="">
+                  </span>
+                  <span class="ss-plant-card__copy">
+                    <b>2. cesmína ostrolistá</b>
+                    <i>Ilex aquifolium</i>
+                  </span>
+                </button>
+                <button class="ss-plant-card" type="button" aria-haspopup="dialog" aria-expanded="false" data-plant data-name="Hortenzie latnatá" data-latin="Hydrangea paniculata" data-description="Dlouho kvetoucí keř s velkými latami, který vytváří výraznou letní a podzimní dominantu záhonu." data-light="Polostín až slunce" data-height="1,5–2,5 m" data-care="Střední" data-image="images/flowers/hortenzie-latnata.webp" data-alt="Hortenzie latnatá (Hydrangea paniculata)">
+                  <span class="ss-plant-card__image">
+                    <img src="images/flowers/hortenzie-latnata.webp" alt="">
+                  </span>
+                  <span class="ss-plant-card__copy">
+                    <b>3. hortenzie latnatá</b>
+                    <i>Hydrangea paniculata</i>
+                  </span>
+                </button>
+              </div>
+              <a href="index.html#sortiment" class="button button--linen">Otevřít plnou živou komponentu ↗</a>
+              <dialog class="ss-plant-dialog" aria-labelledby="sg-plant-dialog-title" data-plant-dialog>
+                <button class="ss-plant-dialog__close" type="button" aria-label="Zavřít kartu rostlin" data-plant-close>×</button>
+                <div class="ss-plant-dialog__stage" data-direction="next" data-plant-stage>
+                  <div class="ss-plant-dialog__media">
+                    <img src="images/flowers/tis-cerveny.webp" alt="Tis červený (Taxus baccata)" data-field="image">
+                  </div>
+                  <div class="ss-plant-dialog__content">
+                    <p class="ss-plant-dialog__label">Karta rostlin</p>
+                    <h3 id="sg-plant-dialog-title" data-field="name">Tis červený</h3>
+                    <p class="ss-plant-dialog__latin" data-field="latin">Taxus baccata</p>
+                    <p class="ss-plant-dialog__description" data-field="description">Stálezelená dřevina s jemnou strukturou, vhodná pro živé ploty, tvarování i klidné solitérní výsadby.</p>
+                    <div class="ss-plant-dialog__facts">
+                      <div class="ss-plant-fact">
+                        <img src="images/pictograms/polostin.svg" alt="">
+                        <b>Stanoviště</b>
+                        <span data-field="light">Stín až polostín</span>
+                      </div>
+                      <div class="ss-plant-fact">
+                        <img src="images/pictograms/vyska-rostliny.svg" alt="">
+                        <b>Výška</b>
+                        <span data-field="height">2–5 m</span>
+                      </div>
+                      <div class="ss-plant-fact">
+                        <span class="ss-care-meter" data-level="1" aria-hidden="true" data-care-meter>
+                          <i></i>
+                          <i></i>
+                          <i></i>
+                        </span>
+                        <b>Náročnost</b>
+                        <span data-field="care">Nízká</span>
+                      </div>
+                    </div>
+                    <nav class="ss-plant-dialog__nav" aria-label="Procházení rostlin">
+                      <button type="button" data-plant-prev>← Předchozí</button>
+                      <button type="button" data-plant-next>Další →</button>
+                    </nav>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+            <div class="sg-tech-grid">
+              <div>
+                <b>Distribuce</b>
+                <p>Samostatné HTML, externí CSS a malý vanilla JavaScript.</p>
+              </div>
+              <div>
+                <b>Ovládání</b>
+                <p>Drag, swipe, šipky, klávesnice a nekonečný loop.</p>
+              </div>
+              <div>
+                <b>Přístupnost</b>
+                <p>Nativní dialog, focus, Escape a omezený pohyb.</p>
+              </div>
+            </div>
+            <div class="sg-code">
+              <button class="sg-copy" type="button" aria-live="polite">Kopírovat HTML</button>
+              <pre>
+                <code>&lt;section class=&quot;ss-plant-catalog&quot; data-ss-plant-catalog&gt; &lt;header class=&quot;ss-plant-catalog__heading&quot;&gt;&lt;!-- nadpis --&gt;&lt;/header&gt; &lt;div class=&quot;ss-plant-carousel&quot; data-plant-carousel&gt; &lt;div class=&quot;ss-plant-carousel__track&quot;&gt;&lt;!-- .ss-plant-card položky --&gt;&lt;/div&gt; &lt;/div&gt; &lt;dialog class=&quot;ss-plant-dialog&quot; data-plant-dialog&gt;&lt;!-- společný detail --&gt;&lt;/dialog&gt; &lt;/section&gt;</code>
+              </pre>
+            </div>
+            <div class="sg-package">
+              <b>Kompletní balíček v0.18.1</b>
+              <div>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/plant-catalog/plant-catalog.html">plant-catalog.html ↗</a>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/plant-catalog/plant-catalog.css">plant-catalog.css ↗</a>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/plant-catalog/plant-catalog.js">plant-catalog.js ↗</a>
+                <a target="_blank" rel="noreferrer" data-component-src="/components/v0.18.1/plant-catalog/README.md">README.md ↗</a>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="sg-section sg-handoff" id="predani">
+          <div class="sg-section-heading">
+            <p class="eyebrow eyebrow--light">10 · Handoff</p>
+            <h2>Jak systém převzít</h2>
+            <p>Vývojář připojí společné verzované CSS, zkopíruje podporovaný HTML blok a vymění pouze dokumentovaný obsah.</p>
+          </div>
+          <ol>
+            <li>
+              <span>01</span>
+              <div>
+                <b>Připojit společné CSS</b>
+                <p>Jedna verze tokenů, typografie a komponentových tříd.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <b>Zkopírovat HTML</b>
+                <p>Markup z katalogu je veřejný kontrakt bez frameworku.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <b>Vyměnit obsah</b>
+                <p>Texty, odkazy, obrázky a alternativní popisy.</p>
+              </div>
+            </li>
+            <li>
+              <span>04</span>
+              <div>
+                <b>Ověřit breakpointy</b>
+                <p>Mobil, tablet, desktop, klávesnice a omezený pohyb.</p>
+              </div>
+            </li>
+          </ol>
+          <p class="sg-note"><b>Zdroj pro předání:</b> používejte verzované soubory z odkazů „Kompletní balíček“, nikoli HTML zkopírované z inspektoru React stránky. Při každém potvrzeném milníku kontrolujeme tokeny, živé ukázky, markup, dokumentaci komponent a changelog společně.</p>
+        </section>
+      </main>
+    </div>
+    <script src="assets/js/style-guide.js" type="module"></script>
+  </body>
+</html>

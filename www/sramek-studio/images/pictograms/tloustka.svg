@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <line x1="144" y1="27" x2="144" y2="114.33" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+  <line x1="144" y1="117" x2="180" y2="78.33" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+  <line x1="144" y1="117" x2="108" y2="78.33" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+  <line x1="144" y1="261" x2="144" y2="173.67" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+  <line x1="144" y1="171" x2="108" y2="209.67" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+  <line x1="144" y1="171" x2="180" y2="209.67" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+  <rect x="36" y="135" width="216" height="18" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <g>
+    <rect x="86.26" y="216.84" width="71.7" height="33.68" transform="translate(-133.8 297.12) rotate(-76.33)" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <rect x="119.38" y="176.17" width="29.33" height="16.84" transform="translate(-76.99 271.23) rotate(-76.33)" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <line x1="111.14" y1="207.53" x2="143.86" y2="215.49" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <circle cx="143.48" cy="145.8" r="8.5" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <path d="M149.95,120.76c.72.17,1.42.38,2.12.61l25.74-105.85s-43.41,33.02-43.33,105.64c4.87-1.45,10.18-1.68,15.47-.39Z" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <circle cx="143.48" cy="145.8" r="25.26" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+  </g>
+  <g>
+    <rect x="19.27" y="159.28" width="71.7" height="33.68" transform="translate(-56.65 29.27) rotate(-19.9)" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <rect x="87.96" y="150.51" width="29.33" height="16.84" transform="translate(-47.96 44.41) rotate(-19.9)" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <line x1="82.31" y1="184.19" x2="70.85" y2="152.52" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+    <path d="M170.18,133.45c-.25-.7-.54-1.38-.84-2.05l102.97-37.27s-28.26,46.98-100.84,54.82c.92-5.03.57-10.35-1.29-15.5Z" style="fill: none; stroke: #010101; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10px;"/>
+  </g>
+</svg>

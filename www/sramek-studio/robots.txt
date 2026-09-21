@@ -1,0 +1,3 @@
+Sitemap: https://www.studio-sramek.cz/sitemap.xml
+User-agent: *
+Disallow: /style-guide
