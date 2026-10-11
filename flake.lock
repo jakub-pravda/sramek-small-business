@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1791179034,
-        "narHash": "sha256-Ni0LBydzaCi8oek12r4mVreuFHqYlM1eTD6SfiENKfw=",
+        "lastModified": 1791594108,
+        "narHash": "sha256-XK4KceonkwD8LuMAt/vNrz982mXJM5jeHAxMwsUXXAQ=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+        "rev": "6510408d147d8c5e6d76043e899e9251756f6a75",
         "type": "github"
       },
       "original": {
@@ -16,9 +16,30 @@
         "type": "github"
       }
     },
+    "playwright-cli": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1791464190,
+        "narHash": "sha256-lHl0gCE/ZsE6Z2DBIDx2ErloHqvG6lYNaNs1FRLB+/4=",
+        "owner": "takeaship",
+        "repo": "playwright-cli-nix",
+        "rev": "c3ea5c409114993ca7ca31ba510ebcf917e86634",
+        "type": "github"
+      },
+      "original": {
+        "owner": "takeaship",
+        "repo": "playwright-cli-nix",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "playwright-cli": "playwright-cli"
       }
     }
   },
