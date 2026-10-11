@@ -1041,7 +1041,8 @@
   display: grid;
 }
 
-.case__meta dt {
+.case__label {
+  display: block;
   letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--green);
@@ -1049,7 +1050,7 @@
   font-weight: 500;
 }
 
-.case__meta dd {
+.case__meta p {
   margin-top: .3rem;
 }
 

@@ -10,9 +10,21 @@ function error_with_message {
 
 function run_html_tidy {
     echo "Running HTML Tidy on $1"
-    find ./www/$1/ -name "*.html" | while read -r f; do
+    find ./www/$1/ -name "*.html" -not -path "*/node_modules/*" -not -path "*/dist/*" | while read -r f; do
         echo "$f"
         tidy --custom-tags blocklevel -m -i -c "$f" || true
+    done
+}
+
+# Conservative variant for sites with CSS/JS hooks on empty elements (e.g. icons,
+# hamburger bars, wrapper divs). Without -c tidy does not drop or merge anything.
+# components/ holds HTML fragments, which tidy would wrap in <html><head><body>.
+function run_html_tidy_safe {
+    echo "Running HTML Tidy (safe) on $1"
+    find ./www/$1/ -name "*.html" -not -path "*/node_modules/*" -not -path "*/dist/*" -not -path "*/components/*" | while read -r f; do
+        echo "$f"
+        tidy --custom-tags blocklevel -m -i -w 0 --tidy-mark no \
+            --drop-empty-elements no --merge-divs no --merge-spans no "$f" || true
     done
 }
 
@@ -44,3 +56,4 @@ echo "Checking HTML files"
 cd $REPO_ROOT || error_with_message "Failed to change directory to $REPO_ROOT"
 
 run_html_tidy "sramek-garden-center"
+run_html_tidy_safe "sramek-studio"
