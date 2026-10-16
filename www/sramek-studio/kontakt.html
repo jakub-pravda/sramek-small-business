@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" as="image" href="images/logos/architektura-zjednodusene-horizontalni-white.svg">
+    <title>Kontakt — Studio Šrámek</title>
+  <link rel="canonical" href="https://www.studiosramek.cz/kontakt">
+  <meta name="keywords" content="zahradní architektura, návrh zahrady, realizace zahrad, péče o zahradu, Stará Boleslav, Brandýs nad Labem">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.studiosramek.cz/kontakt">
+  <meta property="og:title" content="Kontakt — Studio Šrámek">
+  <meta property="og:description" content="Napište nám o své zahradě. Studio Šrámek, Josefa Truhláře 1359/972, Stará Boleslav.">
+  <meta property="og:image" content="https://www.studiosramek.cz/images/photos/relax-na-zahrade.webp">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:site_name" content="Studio Šrámek">
+  <meta name="description" content="Napište nám o své zahradě. Studio Šrámek, Josefa Truhláře 1359/972, Stará Boleslav.">
+  <link rel="shortcut icon" href="favicon.svg?v=3">
+  <link rel="icon" href="favicon.svg?v=3" sizes="any" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg?v=3">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <include src="partials/header.html"></include>
+  <main id="top">
+    <section class="section page-top" id="kontakt">
+      <div class="contact">
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h1 class="title">Promluvme si o vaší zahradě.</h1>
+          <p class="copy" style="margin-top:1.4rem">Plánujete novou zahradu nebo úpravu té stávající? Napište nám, kde se nachází a co byste v ní chtěli vytvořit. Rády se s vámi potkáme, vyslechneme vaše představy a navrhneme další postup.</p>
+          <form class="contact-form" action="#" method="post" data-contact-form="">
+            <div class="field-row">
+              <div class="field">
+                <label for="f-name">Jméno</label><input id="f-name" name="name" type="text" autocomplete="name" required="">
+              </div>
+              <div class="field">
+                <label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" required="">
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="f-phone">Telefon (nepovinné)</label><input id="f-phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+              <div class="field">
+                <label for="f-place">Lokalita zahrady</label><input id="f-place" name="place" type="text">
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-message">Co byste v zahradě chtěli vytvořit?</label>
+              <textarea id="f-message" name="message" required=""></textarea>
+            </div><label class="consent"><input type="checkbox" name="consent" required=""><span>Souhlasím se zpracováním osobních údajů pro účely odpovědi na poptávku.</span></label>
+            <div>
+              <button class="button button--dark" type="submit">Odeslat poptávku</button>
+            </div>
+            <p class="form-status" data-form-status="" role="status"></p>
+          </form>
+        </div>
+        <div class="contact-side">
+          <div class="contact-list">
+            <div>
+              <b>Studio Šrámek</b><a href="mailto:info@studiosramek.cz">info@studiosramek.cz</a><a href="tel:+420000000000">+420 XXX XXX XXX</a><span>Josefa Truhláře 1359/972, Stará Boleslav</span>
+            </div>
+            <div>
+              <b>Barbora Pravda Šrámková</b><span>Vedení studia, realizace</span><a href="mailto:barbora@studiosramek.cz">barbora@studiosramek.cz</a><a href="tel:+420731221662">+420 731 221 662</a>
+            </div>
+            <div>
+              <b>Ivana Janichová</b><span>Návrhy zahrad, komunikace s klienty</span><a href="mailto:ivana@studiosramek.cz">ivana@studiosramek.cz</a><a href="tel:+420607680316">+420 607 680 316</a>
+            </div>
+            <div>
+              <b>Zahradnictví</b><a href="mailto:zahradnictvi@studiosramek.cz">zahradnictvi@studiosramek.cz</a><a href="tel:+420000000000">+420 XXX XXX XXX</a>
+            </div>
+            <div>
+              <b>Sociální sítě</b><span><a href="#" rel="noopener">Instagram</a> · <a href="#" rel="noopener">Facebook</a></span>
+            </div>
+          </div>
+          <p class="note">V sezóně nemusíme být stále na telefonu ani u e-mailu. Ozveme se vám hned, jak to bude možné.</p>
+        </div>
+      </div>
+    </section>
+    <div class="area-strip">
+      Působíme především v Praze a v okolí Brandýsa nad Labem a Staré Boleslavi. Rády se ale vydáme za vaším projektem i do dalších míst po celé republice.
+    </div>
+
+  </main>
+  <include src="partials/footer.html"></include>
+  <script src="assets/js/site.js" type="module"></script>
+</body>
+</html>

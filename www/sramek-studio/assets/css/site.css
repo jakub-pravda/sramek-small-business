@@ -1222,3 +1222,61 @@
     display: block;
   }
 }
+
+/* ---------- multipage ---------- */
+.page-top {
+  padding-top: clamp(9rem,16vw,13rem);
+}
+
+.page-top .title {
+  font-size: clamp(2.6rem,6vw,5.5rem);
+}
+
+.text-links {
+  flex-wrap: wrap;
+  gap: .8rem 2rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+}
+
+.offer-cards {
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  display: grid;
+}
+
+.offer-card {
+  background: #fff;
+  border-radius: var(--radius-sm);
+  padding: 1.75rem;
+}
+
+.offer-card h3 {
+  letter-spacing: -.03em;
+  margin-bottom: .8rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.offer-card p {
+  color: #4d514d;
+  font-size: .92rem;
+}
+
+@media (width<=1050px) {
+  .offer-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width<=600px) {
+  .offer-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.site-nav a[aria-current="page"]:not(.button) {
+  text-underline-offset: .35em;
+  text-decoration: underline;
+}

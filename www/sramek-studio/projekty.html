@@ -4,18 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preload" as="image" href="images/logos/architektura-zjednodusene-horizontalni-white.svg">
-  <link rel="preload" as="image" href="images/photos/relax-na-zahrade.webp" fetchpriority="high">
-  <title>Projekty — Studio Šrámek</title>
+    <title>Projekty — Studio Šrámek</title>
   <link rel="canonical" href="https://www.studiosramek.cz/projekty">
   <meta name="keywords" content="zahradní architektura, návrh zahrady, realizace zahrad, péče o zahradu, Stará Boleslav, Brandýs nad Labem">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.studiosramek.cz/projekty">
-  <meta property="og:title" content="Studio Šrámek — zahradní architektura">
-  <meta property="og:description" content="Navrhujeme, realizujeme a pečujeme o zahrady. Rodinné zahradnictví a zahradní architektura ve Staré Boleslavi.">
+  <meta property="og:title" content="Projekty — Studio Šrámek">
+  <meta property="og:description" content="Vybrané realizace zahrad Studia Šrámek.">
   <meta property="og:image" content="https://www.studiosramek.cz/images/photos/relax-na-zahrade.webp">
   <meta property="og:locale" content="cs_CZ">
   <meta property="og:site_name" content="Studio Šrámek">
-  <meta name="description" content="Navrhujeme, realizujeme a pečujeme o zahrady. Rodinné zahradnictví a zahradní architektura ve Staré Boleslavi.">
+  <meta name="description" content="Vybrané realizace zahrad Studia Šrámek.">
   <link rel="shortcut icon" href="favicon.svg?v=3">
   <link rel="icon" href="favicon.svg?v=3" sizes="any" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon.svg?v=3">
@@ -23,14 +22,9 @@
   <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Studio Šrámek – úvodní stránka"><img class="brand-logo brand-logo--light" src="images/logos/architektura-zjednodusene-horizontalni-white.svg" alt="Studio Šrámek"> <img class="brand-logo brand-logo--dark" src="images/logos/architektura-zjednodusene-horizontalni-black.svg" alt="" aria-hidden="true"></a>
-    <nav class="site-nav" aria-label="Hlavní navigace">
-      <a href="index.html#sluzby">Služby</a> <a href="projekty.html">Projekty</a> <a href="index.html#o-nas">O nás</a> <a href="index.html#zahradnictvi">Zahradnictví</a> <a class="site-nav__contact" href="index.html#kontakt">Kontakt</a>
-    </nav><a class="button header-cta button--linen" href="index.html#kontakt">Poptat projekt</a> <button class="menu-toggle" type="button" aria-label="Otevřít navigaci" aria-expanded="false"><span></span> <span></span></button>
-  </header>
+  <include src="partials/header.html"></include>
   <main id="top">
-    <section class="page-hero">
+        <section class="page-hero">
       <p class="eyebrow">Vybrané projekty</p>
       <h1 class="title">Zahrady, které už žijí.</h1>
       <p class="copy">Každá vznikla z jiného místa, potřeb a představ lidí, kteří v ní žijí. Prohlédněte si vybrané realizace Studia Šrámek.</p>
@@ -200,35 +194,11 @@
       <img src="images/photos/spolecne-chvilky.webp" alt="" loading="lazy">
       <div class="stack">
         <h2 class="title">Líbí se vám způsob, jakým o zahradách přemýšlíme?</h2>
-        <p class="copy">Pojďme se podívat na tu vaši.</p><a class="button button--linen" href="index.html#kontakt">Poptat projekt →</a>
+        <p class="copy">Pojďme se podívat na tu vaši.</p><a class="button button--linen" href="kontakt.html">Poptat projekt →</a>
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <div class="site-footer__col">
-    <p class="site-footer__label">Studio Šrámek</p>
-    <p>Rodinné zahradnictví · Zahradní architektura</p><img src="images/logos/architektura-zjednodusene-horizontalni-white.svg" alt="Studio Šrámek"></div>
-    <div class="site-footer__col">
-      <p class="site-footer__label">Prozkoumejte</p>
-      <div class="site-footer__links">
-        <a href="index.html#sluzby">Služby</a> <a href="index.html#projekty">Projekty</a> <a href="index.html#o-nas">O nás</a> <a href="index.html#zahradnictvi">Zahradnictví</a> <a href="index.html#faq">FAQ</a> <a href="index.html#kontakt">Kontakt</a>
-      </div>
-    </div>
-    <div class="site-footer__col">
-      <p class="site-footer__label">Kontakt</p><a href="mailto:info@studiosramek.cz">info@studiosramek.cz</a> <a href="tel:+420000000000">+420 XXX XXX XXX</a>
-      <address>
-        Josefa Truhláře 1359/972<br>
-        Stará Boleslav
-      </address>
-      <p><a href="#" rel="noopener">Instagram</a> · <a href="#" rel="noopener">Facebook</a></p>
-    </div>
-    <div class="site-footer__bottom">
-      <span>© 2026 Studio Šrámek · IČO [doplnit]</span>
-      <nav aria-label="Právní informace">
-        <a href="#">Ochrana osobních údajů</a> <a href="#">Cookies</a> <a href="#">Nastavení cookies</a>
-      </nav>
-    </div>
-  </footer>
+  <include src="partials/footer.html"></include>
   <script src="assets/js/site.js" type="module"></script>
 </body>
 </html>

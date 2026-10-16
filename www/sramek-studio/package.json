@@ -4,8 +4,8 @@
   "description": "studio sramek - zahradni architektura",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "buildstatic": "npx parcel build index.html projekty.html error.html && cp robots.txt sitemap.xml .htaccess ./dist && cp -r components ./dist && cp --parents images/photos/relax-na-zahrade.webp ./dist",
-    "dev": "npx parcel index.html projekty.html"
+    "buildstatic": "npx parcel build index.html sluzby.html projekty.html o-nas.html zahradnictvi.html kontakt.html error.html && cp robots.txt sitemap.xml .htaccess ./dist && cp -r components ./dist && cp --parents images/photos/relax-na-zahrade.webp ./dist",
+    "dev": "npx parcel index.html sluzby.html projekty.html o-nas.html zahradnictvi.html kontakt.html"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "@parcel/packager-raw-url": "^2.16.1",
     "@parcel/transformer-jsonld": "^2.16.1",
     "http-server": "^14.1.1",
-    "parcel": "^2.15.4"
+    "parcel": "^2.15.4",
+    "posthtml-include": "^2.0.1"
   }
 }
